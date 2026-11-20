@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VidLimit Support: FAQ and contact</title>
+<meta name="description" content="Get help with VidLimit: setting a target size, free compressions, the one-time unlock, restoring a purchase, and how to contact support.">
+<meta name="theme-color" content="#0B1B3A">
+<link rel="canonical" href="https://vidlimit.com/support/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VidLimit">
+<meta property="og:title" content="VidLimit Support: FAQ and contact">
+<meta property="og:description" content="Get help with VidLimit: setting a target size, free compressions, the one-time unlock, restoring a purchase, and how to contact support.">
+<meta property="og:url" content="https://vidlimit.com/support/">
+<meta property="og:image" content="https://vidlimit.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="VidLimit logo: two hands squeezing a video player so it fits under a size limit.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VidLimit Support: FAQ and contact">
+<meta name="twitter:description" content="Get help with VidLimit: setting a target size, free compressions, the one-time unlock, restoring a purchase, and how to contact support.">
+<meta name="twitter:image" content="https://vidlimit.com/assets/og-image.png">
+<meta name="twitter:image:alt" content="VidLimit logo: two hands squeezing a video player so it fits under a size limit.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap wide">
+<a href="/" aria-label="VidLimit home"><img src="/assets/vidlimit-lockup-dark.svg" alt="VidLimit" width="172" height="36"></a>
+<nav aria-label="Main"><a href="/support/" aria-current="page">Support</a><a href="/privacy/">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+<h1 class="page">VidLimit Support</h1>
+<p class="meta">Questions, problems or feedback? Email <a href="mailto:support@vidlimit.com">support@vidlimit.com</a>.</p>
+<h2>Frequently asked questions</h2>
+<details open><summary>How do I set a target size?</summary>
+<p>Open a video (drop it on the window or use <em>Open Video…</em>), then choose a size limit: 8, 10, 25, 50 or 100 MB, or choose <em>Custom</em> and enter any size from 0.5 to 2000 MB. VidLimit shows what will happen (for example any change to resolution or frame rate and the expected size) before you click <em>Compress</em>. You then choose where to save the result.</p>
+<p>Sizes use 1 MB = 1,000,000 bytes.</p></details>
+<details><summary>Why is my result slightly over or under the limit?</summary>
+<p>VidLimit encodes the video and, if needed, adjusts and tries again (up to 3 passes, occasionally 4) to land under your limit. It aims a little below the limit to leave a safety margin, so results usually come out somewhat under it. In our own tests results landed at about 87 to 96% of the target.</p>
+<p>If a limit can't be met without ruining the video, VidLimit tells you before you start and shows the closest size it can reach. If the saved file still ends up over your limit, the result screen says <em>Over your limit</em> rather than pretending otherwise.</p>
+<!-- TODO: pass limit taken from EncodePlanner tuning (maxPasses 3, maxPassesWhenAllOver 4); re-check before release. Also confirm Michael wants the 87-96% test figures (PRODUCT_PRINCIPLES.md) quoted publicly. --></details>
+<details><summary>What happens if my video is already smaller than the limit?</summary>
+<p>VidLimit tells you the video already fits and that you don't need to compress it. Compressing a video that already fits does not use up a free compression. If you compress it anyway, the new file will not be bigger than the original.</p></details>
+<details><summary>What does the free version include?</summary>
+<p>5 free compressions. A free compression is only used up when a file is saved and the result is at or under your limit. Results over your limit, canceled or failed runs, and videos that already fit cost nothing. The app shows how many free compressions you have left.</p></details>
+<details><summary>What does the one-time unlock do?</summary>
+<p>It removes the limit on the number of compressions: unlimited compressions for a single one-time purchase. It is not a subscription. The planned price is $9.99; the price shown in the App Store at purchase time is the one that applies.</p>
+<!-- TODO: price and availability are not final until the in-app purchase exists in App Store Connect (README says $9.99 is only in the local StoreKit file). Confirm Family Sharing stays off and mention it if so. --></details>
+<details><summary>How do I restore a purchase?</summary>
+<p>In VidLimit, choose <em>Restore Purchases…</em> from the app menu, or click <em>Restore Purchases</em> on the unlock screen. Use the same Apple ID you bought with. Restoring contacts the App Store, so you need an internet connection. If nothing is found, VidLimit says no earlier purchase was found for that Apple ID.</p>
+<!-- TODO: verify the exact menu location of "Restore Purchases…" in the built app (code places it after the About item in the app menu; not click-tested). -->
+<p>For purchase or refund questions, you can also check your Apple purchase history or contact Apple Support.</p></details>
+<details><summary>Where is my compressed video saved, and is my original safe?</summary>
+<p>The save window starts next to your original with a new name ending in <em>-vidlimit</em> and the .mp4 extension (for example <em>clip-vidlimit.mp4</em>). Your original is never changed, and an existing file is never overwritten; if the name is taken, VidLimit picks a new one.</p></details>
+<details><summary>Does VidLimit upload my videos?</summary>
+<p>No. Compression happens on your Mac. See the <a href="/privacy/">Privacy Policy</a>.</p></details>
+<details><summary>Which Macs does it run on? Can I compress several videos at once?</summary>
+<p>VidLimit requires macOS 15.0 or later. It compresses one video at a time; batch compression isn't supported yet.</p>
+<!-- TODO: minimum macOS 15.0 is from the README's deployment target; confirm before App Store submission. -->
+</details>
+<h2>Still stuck?</h2>
+<p>Email <a href="mailto:support@vidlimit.com">support@vidlimit.com</a>. Please include your macOS version and, if you can, the size and length of the video.</p>
+<!-- TODO: PRODUCT_PRINCIPLES.md aims for replies within 2 business days; that target is not stated publicly here. Add it if Michael wants to commit to it. -->
+</div></main>
+<footer class="site"><div class="wrap wide">
+<nav aria-label="Footer"><ul><li><a href="/">Home</a></li><li><a href="/support/">Support</a></li><li><a href="/privacy/">Privacy</a></li></ul></nav>
+<p>© 2026 Michael S. Lewis. All rights reserved. VidLimit is a trademark of Michael S. Lewis.</p>
+</div></footer>
+</body>
+</html>
