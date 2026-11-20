@@ -13,7 +13,7 @@ header.site img{height:36px;width:auto;display:block}
 nav a{color:var(--white);text-decoration:none;margin-left:1.25rem;font-weight:600;padding:.25rem 0;border-bottom:2px solid transparent}
 nav a:hover,nav a[aria-current]{border-bottom-color:var(--amber);color:var(--white)}
 .hero{background:var(--navy);color:var(--white);text-align:center;padding:0 0 3rem}
-.hero img{display:block;width:100%;max-width:44rem;height:auto;margin:0 auto}
+.hero img{display:block;width:100%;max-width:60rem;height:auto;margin:0 auto}
 .hero h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;margin:1.5rem 1.25rem .5rem}
 .hero p.sub{font-size:1.3rem;margin:0 1.25rem;color:var(--amber);font-weight:600}
 .soon{display:inline-block;margin-top:1.75rem;padding:.6rem 1.2rem;border:2px solid var(--amber);border-radius:999px;color:var(--white);font-weight:600}
@@ -22,7 +22,7 @@ h1.page{font-size:2rem;margin:0 0 .5rem}
 h2{font-size:1.35rem;margin:2.2rem 0 .5rem}
 h3{font-size:1.1rem;margin:1.6rem 0 .3rem}
 .meta{color:var(--muted)}
-.benefits{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.benefits{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr))}
 .benefits li{background:var(--soft);border-left:5px solid var(--amber);border-radius:8px;padding:1rem 1.1rem}
 .benefits strong{display:block;margin-bottom:.2rem}
 details{border-bottom:1px solid var(--line);padding:.9rem 0}
@@ -33,3 +33,4 @@ footer.site a{color:var(--white)}
 footer.site ul{list-style:none;padding:0;margin:0 0 1rem;display:flex;gap:1.25rem;flex-wrap:wrap}
 footer.site p{margin:.3rem 0;color:#dfe5f1}
 @media (max-width:30rem){header.site img{height:30px}nav a{margin-left:.9rem}}
+footer.site nav a{margin:0;font-weight:400;text-decoration:underline;border:0}
