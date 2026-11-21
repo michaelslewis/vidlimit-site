@@ -23,4 +23,4 @@ Deploy by uploading the folder contents as-is to any static host.
 
 The pages make factual claims about the app (free tier of 5, $9.99 one-time unlock, 0.5 to 2000 MB custom range, presets, macOS 15 minimum, no network entitlement, privacy manifest contents, Help-menu URLs `/support` and `/privacy`). When the app changes, update the site in the same sitting, and the other way round. Source of truth: the app repo's `README.md`, `PROJECT.md` and `PrivacyInfo.xcprivacy`.
 
-Open items are marked with `TODO` comments in the HTML (`grep -rn TODO --include=*.html .`). The "Coming soon" line on the landing page must be replaced with a real Mac App Store link, using Apple's official badge guidelines, only once the app is live.
+Open items are marked with `TODO` comments in the HTML (`grep -rn TODO --include=*.html .`). The landing page has no availability line yet. Once the app is live, add a real Mac App Store link to the hero (the `.soon` pill style in `style.css` can be reused or replaced), using Apple's official badge guidelines, and add a short "Available on the Mac App Store" sentence to the meta, og and twitter descriptions.

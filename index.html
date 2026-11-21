@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VidLimit: Get any video under the size limit</title>
-<meta name="description" content="Pick a size. VidLimit does the rest. A small Mac app that compresses a video to fit your size limit, entirely on your Mac. Coming soon to the Mac App Store.">
+<title>VidLimit: Compress any video to fit your size limit</title>
+<meta name="description" content="Pick a size. VidLimit does the rest. A small Mac app that compresses a video to fit your size limit, entirely on your Mac.">
 <meta name="theme-color" content="#0B1B3A">
 <link rel="canonical" href="https://vidlimit.com/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -14,16 +14,16 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="VidLimit">
-<meta property="og:title" content="VidLimit: Get any video under the size limit">
-<meta property="og:description" content="Pick a size. VidLimit does the rest. A small Mac app that compresses a video to fit your size limit, entirely on your Mac. Coming soon to the Mac App Store.">
+<meta property="og:title" content="VidLimit: Compress any video to fit your size limit">
+<meta property="og:description" content="Pick a size. VidLimit does the rest. A small Mac app that compresses a video to fit your size limit, entirely on your Mac.">
 <meta property="og:url" content="https://vidlimit.com/">
 <meta property="og:image" content="https://vidlimit.com/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="VidLimit logo: two hands squeezing a video player so it fits under a size limit.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="VidLimit: Get any video under the size limit">
-<meta name="twitter:description" content="Pick a size. VidLimit does the rest. A small Mac app that compresses a video to fit your size limit, entirely on your Mac. Coming soon to the Mac App Store.">
+<meta name="twitter:title" content="VidLimit: Compress any video to fit your size limit">
+<meta name="twitter:description" content="Pick a size. VidLimit does the rest. A small Mac app that compresses a video to fit your size limit, entirely on your Mac.">
 <meta name="twitter:image" content="https://vidlimit.com/assets/og-image.png">
 <meta name="twitter:image:alt" content="VidLimit logo: two hands squeezing a video player so it fits under a size limit.">
 <link rel="stylesheet" href="/style.css">
@@ -34,10 +34,13 @@
 <nav aria-label="Main"><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
 </div></header>
 <section class="hero">
-<img src="/assets/vidlimit-logo-dark.svg" alt="Two amber hands squeezing a video player labeled VidLimit, as if pressing it down to fit a size limit." width="1024" height="572">
-<h1>Get any video under the size limit.</h1>
+<video class="hero-loop" autoplay muted playsinline preload="auto" width="1584" height="780" poster="/assets/vidlimit-hero-poster-dark.png" aria-label="Two amber hands squeezing a video player labeled VidLimit, as if pressing it down to fit a size limit.">
+<source src="/assets/vidlimit-squeeze-loop-dark.webm" type="video/webm">
+<source src="/assets/vidlimit-squeeze-loop-dark.mp4" type="video/mp4">
+</video>
+<img class="hero-still" src="/assets/vidlimit-hero-final-dark.png" alt="Two amber hands squeezing a video player labeled VidLimit, as if pressing it down to fit a size limit." width="1584" height="780">
+<h1>Compress any video to fit your size limit.</h1>
 <p class="sub">Pick a size. VidLimit does the rest.</p>
-<p class="soon">Coming soon to the Mac App Store</p>
 </section>
 <main><div class="wrap wide">
 <ul class="benefits">
@@ -52,5 +55,6 @@
 <nav aria-label="Footer"><ul><li><a href="/">Home</a></li><li><a href="/support/">Support</a></li><li><a href="/privacy/">Privacy</a></li></ul></nav>
 <p>© 2026 Michael S. Lewis. All rights reserved. VidLimit is a trademark of Michael S. Lewis.</p>
 </div></footer>
+<script>(function(){var v=document.querySelector(".hero-loop");if(v&&window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches){v.removeAttribute("autoplay");v.pause();}})();</script>
 </body>
 </html>
